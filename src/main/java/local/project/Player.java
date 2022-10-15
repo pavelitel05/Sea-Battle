@@ -116,6 +116,7 @@ public class Player extends Area{
             System.out.println("One more shot, " + this.getName());
             turn(input.nextLine());
         }else{
+            System.out.println(this.getDestroyedParts());
             this.currentPlayerArea[y][x] = 3;
             showPlayerArea(this.currentPlayerArea);
             System.out.println("Miss, another Player's turn");

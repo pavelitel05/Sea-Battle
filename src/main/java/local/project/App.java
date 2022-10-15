@@ -26,7 +26,7 @@ public class App {
         playerTwo.feelPlayerArea();
         System.out.println("Were generated areas for both players");
         System.out.println(playerOne.getName() + " your turn");
-        while(playerOne.getDestroyedParts() != 0 | playerTwo.getDestroyedParts() != 0){
+        while(playerOne.getDestroyedParts() != 0 & playerTwo.getDestroyedParts() != 0){
             try {
                 playerOne.turn(input.nextLine());
                 playerTwo.turn(input.nextLine());
